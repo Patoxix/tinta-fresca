@@ -50,6 +50,17 @@
     art.id = p.id;
     art.setAttribute("aria-labelledby", "t-" + p.id);
 
+    var fig = el("figure", "ilustracion");
+    var img = el("img");
+    img.src = "img/" + p.id + ".svg";
+    img.alt = "";
+    img.width = 600;
+    img.height = 400;
+    img.loading = "lazy";
+    fig.appendChild(img);
+    fig.appendChild(el("figcaption", null, "Ilustración: Tinta Fresca"));
+    art.appendChild(fig);
+
     var tema = el("p", "tema", p.tema);
     tema.appendChild(el("span", "etiqueta", "Sátira"));
     art.appendChild(tema);

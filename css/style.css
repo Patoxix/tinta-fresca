@@ -391,6 +391,30 @@ main {
   margin-inline: 0.4rem;
 }
 
+/* ---------- Ilustraciones ---------- */
+
+.ilustracion {
+  margin: 0 0 0.9rem;
+}
+.ilustracion img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  background: var(--regla);
+}
+.principal .ilustracion img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.ilustracion figcaption {
+  margin-top: 0.3rem;
+  font-family: var(--rotulos);
+  font-size: 0.68rem;
+  color: var(--tinta-suave);
+  text-align: right;
+}
+
 /* ---------- Ficha oculta ---------- */
 
 .ficha {
