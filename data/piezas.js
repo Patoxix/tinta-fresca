@@ -24,6 +24,7 @@ window.PIEZAS = [
     seccion: "peru",
     puesto: "principal",
     tema: "Educación",
+    imagen: { src: "img/upc-ucal.webp", alt: "Campus de la UPC, con su portal rojo, junto al de la UCAL." },
     titular: "La UPC aprovecha el CyberWow y compra la UCAL por 35 millones de dólares con alumnos incluidos",
     bajada: "La operación se concretó el 5 de noviembre. El monto incluye los inmuebles del campus, valorizados en cerca de US$ 25 millones. La UCAL atiende a unos 2,500 estudiantes y la integración será efectiva desde el 16 de febrero de 2027. La UPC afirma que garantizará la continuidad académica.",
     cuerpo: [
@@ -126,6 +127,7 @@ window.PIEZAS = [
     seccion: "peru",
     puesto: "fila",
     tema: "Elecciones municipales",
+    imagen: { src: "img/lari-blancos.webp", alt: "Iglesia colonial blanca con dos torres, entre cerros, en el distrito de Lari." },
     titular: "Participó solo y perdió: el único candidato de Lari vuelve a perder contra nadie",
     bajada: "En Lari (Caylloma, Arequipa), el único candidato a la alcaldía obtuvo 188 votos, cerca de 27%, frente a 407 votos en blanco, cerca de 60%, y 81 nulos. Según la nota, algo parecido ocurrió en 2022. El JNE definirá los siguientes pasos.",
     cuerpo: [
@@ -261,6 +263,7 @@ window.PIEZAS = [
     seccion: "mundo",
     puesto: "fila",
     tema: "Tecnología",
+    imagen: { src: "img/whatsapp-numero.jpg", alt: "Persona usando WhatsApp en un celular, con la pantalla de nombre de usuario." },
     titular: "WhatsApp ocultará tu número en una fecha que prefiere mantener oculta",
     bajada: "WhatsApp trabaja en una función que ocultaría por defecto el número de teléfono, y cada usuario elegiría quién puede verlo, según WABetaInfo. La función está en desarrollo, no tiene fecha de lanzamiento y no sería retroactiva.",
     cuerpo: [
@@ -288,6 +291,7 @@ window.PIEZAS = [
     seccion: "mundo",
     puesto: "fila",
     tema: "Tecnología",
+    imagen: { src: "img/apple-watch.webp", alt: "Varios Apple Watch exhibidos en soportes de una tienda." },
     titular: "El Apple Watch tomará apuntes de tus conversaciones; a quienes hablen contigo no les llegará copia",
     bajada: "La beta para desarrolladores de watchOS 27.3, disponible desde el 3 de noviembre, incluye resúmenes de conversaciones con Siri. Apple dice que no almacena el audio. Las organizaciones EFF y EPIC critican la función por motivos de privacidad.",
     cuerpo: [
@@ -315,6 +319,7 @@ window.PIEZAS = [
     seccion: "mundo",
     puesto: "fila",
     tema: "Ciencia",
+    imagen: { src: "img/nasa-convocatoria.jpg", alt: "Edificio de ensamblaje de vehículos de la NASA, con su logo, al anochecer." },
     titular: "La NASA abre convocatoria para ir a la Luna y a Marte: por fin un trabajo con viaje incluido",
     bajada: "La convocatoria cierra a las 11:59 p. m. del jueves 3 de diciembre. Exige ciudadanía estadounidense, un posgrado STEM o equivalente y tres años de experiencia. Artemis III es en 2027 y Artemis IV en 2028. La nota no indica el número de plazas.",
     cuerpo: [

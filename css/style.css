@@ -410,7 +410,11 @@ main {
   width: 100%;
   height: auto;
   aspect-ratio: 3 / 2;
+  object-fit: cover;
   background: var(--regla);
+}
+.articulo .ilustracion img {
+  aspect-ratio: auto;
 }
 .principal .titular a {
   color: inherit;
