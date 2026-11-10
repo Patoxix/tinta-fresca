@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tinta Fresca</title>
+  <meta name="description" content="Tinta Fresca: edición satírica. Noticias reales contadas con otro titular. Proyecto de práctica del curso Información y Cultura Digital (PUCP).">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161513'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' text-anchor='middle' fill='%23f6f3ec'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="saltar" href="#portada">Ir a las noticias</a>
+
+  <div class="franja">
+    <div class="contenedor">
+      <p><strong>Edición satírica</strong></p>
+    </div>
+  </div>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <p class="fecha" id="fecha-hoy">Lunes 9 de noviembre de 2026</p>
+      <h1 class="nombre"><a href="./">Tinta Fresca</a></h1>
+      <nav class="secciones" aria-label="Secciones">
+        <ul>
+          <li><a href="#portada" aria-current="true">Portada</a></li>
+          <li><a href="#peru">Perú</a></li>
+          <li><a href="#mundo">Mundo</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="cintillo" role="region" aria-label="Últimas noticias">
+    <div class="contenedor cintillo-fila">
+      <span class="cintillo-rotulo">Últimas</span>
+      <div class="cintillo-ventana">
+        <ul class="cintillo-lista" id="cintillo-lista"></ul>
+      </div>
+      <button class="cintillo-pausa" id="cintillo-pausa" type="button" aria-pressed="false">Pausar</button>
+    </div>
+  </div>
+
+  <main id="portada">
+    <div class="contenedor">
+      <noscript><p class="sin-js">Esta página necesita JavaScript para mostrar las noticias.</p></noscript>
+
+      <section class="portada" id="portada-grid" aria-label="Portada"></section>
+
+      <section class="bloque" id="peru" aria-labelledby="h-peru">
+        <h2 class="bloque-titulo" id="h-peru">Perú</h2>
+        <div class="fila" id="fila-peru"></div>
+      </section>
+
+      <section class="bloque" id="mundo" aria-labelledby="h-mundo">
+        <h2 class="bloque-titulo" id="h-mundo">Mundo</h2>
+        <div class="fila fila-4" id="fila-mundo"></div>
+      </section>
+
+      <section class="bloque acerca" id="acerca" aria-labelledby="h-acerca">
+        <h2 class="bloque-titulo" id="h-acerca">Acerca de Tinta Fresca</h2>
+        <div class="acerca-texto">
+          <p>Tinta Fresca toma noticias reales y les pone otro titular. Cada pieza enlaza la nota original, y el humor cambia el encuadre pero no inventa datos. Lo único inventado es la metáfora.</p>
+          <p>Es un ejercicio de práctica del curso Información y Cultura Digital (PUCP, 2026-2). Es sátira y no representa a ninguna de las personas ni instituciones mencionadas.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 Tinta Fresca. Edición satírica. Proyecto de práctica de un curso universitario.</p>
+      <p>Este sitio no usa cookies ni analítica, y sus tipografías están alojadas en el propio sitio. No hay fotografías: las notas originales tienen las suyas.</p>
+    </div>
+  </footer>
+
+  <script src="data/piezas.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
