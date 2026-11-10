@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-hidden="true"><rect width="600" height="400" fill="#1b4f72"/>
-<circle cx="470" cy="90" r="120" fill="#245f87"/>
-<g fill="#f6f3ec"><path d="M150 170h300l-30 120H180z" opacity=".0"/></g>
-<path d="M120 120h60l40 170h230l30-110H205" fill="none" stroke="#f6f3ec" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="250" cy="330" r="22" fill="#f6f3ec"/><circle cx="410" cy="330" r="22" fill="#f6f3ec"/>
-<g fill="#d9a441"><path d="M240 150l80-45 80 45z"/><rect x="250" y="156" width="140" height="10"/>
-<rect x="258" y="170" width="16" height="72"/><rect x="300" y="170" width="16" height="72"/><rect x="342" y="170" width="16" height="72"/><rect x="376" y="170" width="16" height="72"/>
-<rect x="244" y="244" width="160" height="12"/></g>
-<g transform="rotate(14 500 280)"><path d="M440 250h90l30 30-30 30h-90z" fill="#b3124a"/><circle cx="545" cy="280" r="7" fill="#1b4f72"/><text x="485" y="290" font-family="Georgia,serif" font-weight="700" font-size="28" text-anchor="middle" fill="#f6f3ec">35 M</text></g></svg>

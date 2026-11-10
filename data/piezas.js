@@ -8,6 +8,8 @@
     tema      rótulo pequeño sobre el titular
     titular   el titular satírico
     bajada    resumen con los hechos, en tono de diario
+    cuerpo    lista de párrafos de la nota completa (solo hechos de las fuentes)
+    imagen    opcional: { src, alt, credito }  (foto con derechos claros)
     fuentes   [{ medio, titulo, url, fecha }]
     ficha     { mantiene, cambia, tecnica, limite, verificar }
 
@@ -24,6 +26,11 @@ window.PIEZAS = [
     tema: "Educación",
     titular: "La UPC aprovecha el CyberWow y compra la UCAL por 35 millones de dólares con alumnos incluidos",
     bajada: "La operación se concretó el 5 de noviembre. El monto incluye los inmuebles del campus, valorizados en cerca de US$ 25 millones. La UCAL atiende a unos 2,500 estudiantes y la integración será efectiva desde el 16 de febrero de 2027. La UPC afirma que garantizará la continuidad académica.",
+    cuerpo: [
+      "La UPC, filial de Laureate Education en el Perú, compró el 100% del capital social de la UCAL por unos US$ 35 millones, según informó RPP. La operación se concretó el 5 de noviembre de 2026.",
+      "El monto incluye los inmuebles del campus, valorizados en cerca de US$ 25 millones. La UCAL atiende actualmente a unos 2,500 estudiantes y su campus tiene capacidad para recibir a unos 5,000.",
+      "La integración será efectiva desde el 16 de febrero de 2027. La UPC dijo que garantizará la continuidad académica y que las clases seguirán con normalidad. Lo comunicó mediante un comunicado de Laureate y una carta de la rectora Milagros Morgan."
+    ],
     fuentes: [
       {
         medio: "RPP",
@@ -47,6 +54,11 @@ window.PIEZAS = [
     tema: "Elecciones municipales",
     titular: "Lima tendrá una alcaldesa que no conoce",
     bajada: "El JNE resolvió, por mayoría, que quien fue alcalde no puede volver como primer regidor. Según los medios, la segunda regidora de la lista podría asumir; la proclamación depende del Jurado Electoral Especial de Lima Centro.",
+    cuerpo: [
+      "El Jurado Nacional de Elecciones (JNE) resolvió, por mayoría, que quien fue alcalde no puede volver al cargo como primer regidor. La decisión consta en la Resolución 4557-2026-JNE, del 7 de noviembre. Los miembros Maisch y Oyarce votaron en minoría.",
+      "Con ese criterio, Rafael López Aliaga no sería proclamado alcalde de Lima. Según los medios citados, quien podría asumir es la segunda regidora de la lista.",
+      "La proclamación aún depende del Jurado Electoral Especial de Lima Centro, que debe aplicar lo resuelto por el JNE."
+    ],
     fuentes: [
       {
         medio: "Infobae",
@@ -82,6 +94,11 @@ window.PIEZAS = [
     tema: "Elecciones municipales",
     titular: "Cara o sello: la alcaldía de Conima se define por una moneda",
     bajada: "Tras un empate de 671 votos en el distrito de Conima (Moho, Puno), el Jurado Electoral Especial de Huancané resolvió con una moneda de un sol, según el método acordado por el JNE. Ganó «sello» y, con él, el candidato Rubén Quispe Capajaña.",
+    cuerpo: [
+      "El distrito de Conima, en la provincia de Moho (Puno), empató la elección municipal del 4 de noviembre: dos candidatos obtuvieron 671 votos cada uno, el 27.739% del total.",
+      "El Jurado Electoral Especial de Huancané resolvió el desempate con una moneda de un sol, extraída de un recipiente con cinco monedas, según el método acordado por el JNE el 29 de octubre.",
+      "Salió «sello» y ganó Rubén Quispe Capajaña, de Somos Perú. Las fuentes consultadas difieren en si la moneda fue física o virtual."
+    ],
     fuentes: [
       {
         medio: "América TV",
@@ -111,6 +128,10 @@ window.PIEZAS = [
     tema: "Elecciones municipales",
     titular: "Participó solo y perdió: el único candidato de Lari vuelve a perder contra nadie",
     bajada: "En Lari (Caylloma, Arequipa), el único candidato a la alcaldía obtuvo 188 votos, cerca de 27%, frente a 407 votos en blanco, cerca de 60%, y 81 nulos. Según la nota, algo parecido ocurrió en 2022. El JNE definirá los siguientes pasos.",
+    cuerpo: [
+      "En el distrito de Lari (Caylloma, Arequipa), un solo candidato postuló a la alcaldía en las elecciones municipales. Obtuvo 188 votos, cerca del 27%. Los votos en blanco fueron 407, cerca del 60%, y hubo 81 votos nulos.",
+      "Según la nota de Infobae, algo parecido ocurrió en 2022. El JNE definirá los siguientes pasos."
+    ],
     fuentes: [
       {
         medio: "Infobae",
@@ -140,6 +161,11 @@ window.PIEZAS = [
     tema: "Gobierno",
     titular: "Cuántos colegios lleva Keiko: balance de sus 100 días al mando",
     bajada: "La presidenta juró el 28 de julio y cumplió 100 días el 5 de noviembre. En campaña prometió 3,000 colegios nuevos; el 27 de octubre anunció 2,000 nuevos y la renovación de otros 3,000. La prensa reportó hasta ahora la colocación de una primera piedra en Santa Anita.",
+    cuerpo: [
+      "Keiko Fujimori juró como presidenta el 28 de julio y cumplió 100 días de gobierno el 5 de noviembre.",
+      "Durante la campaña prometió 3,000 colegios nuevos. El 27 de octubre anunció 2,000 colegios nuevos y la renovación de otros 3,000, según La República. Hasta ahora, la prensa reportó la colocación de una primera piedra en Santa Anita.",
+      "Gestión señaló en septiembre que el Estado completa entre 30 y 80 colegios nuevos al año. Esta nota no incluye aún el conteo oficial del Ministerio de Educación."
+    ],
     fuentes: [
       {
         medio: "La República",
@@ -169,6 +195,11 @@ window.PIEZAS = [
     tema: "Visita papal",
     titular: "Un peruano que regresa del extranjero brillando: el comercio ya cuenta con vender hasta 20% más",
     bajada: "León XIV llega el miércoles 11 de noviembre a las 5:30 p. m. a la Base Aérea del Callao, procedente de Buenos Aires, y visitará el país hasta el 16. Tiene nacionalidad peruana desde 2015 y fue obispo de Chiclayo. La Cámara de Comercio de Lima proyecta que las ventas minoristas suban entre 10% y 20%.",
+    cuerpo: [
+      "El papa León XIV llegará al Perú el miércoles 11 de noviembre a las 5:30 p. m. a la Base Aérea del Callao, procedente de Buenos Aires. Visitará el país hasta el 16 de noviembre.",
+      "El itinerario incluye Lima, Chiclayo, Santa Cruz de Succhabamba, Cusco y Pucallpa, además de Zaña. León XIV tiene nacionalidad peruana desde 2015 y fue obispo de Chiclayo entre 2015 y 2023.",
+      "La Cámara de Comercio de Lima proyecta que las ventas del comercio minorista suban entre 10% y 20% durante la semana de actividades. Es una proyección, no un resultado."
+    ],
     fuentes: [
       {
         medio: "Infobae",
@@ -198,6 +229,11 @@ window.PIEZAS = [
     tema: "Paraguay",
     titular: "Paraguay sin plata y sin presidente",
     bajada: "El martes 3 de noviembre fue intervenido Ueno Bank, con unos tres millones de clientes sin acceso a sus cuentas, según AFP. El viernes 6 el Senado votó la destitución de Santiago Peña, con 44 votos; Pedro Alliana asumió. Peña quedó detenido en su casa por supuestos delitos.",
+    cuerpo: [
+      "El martes 3 de noviembre, el Ueno Bank fue intervenido. Según AFP, unos tres millones de clientes quedaron sin acceso a sus cuentas.",
+      "El viernes 6, el Senado votó la destitución del presidente Santiago Peña con 44 votos, y Pedro Alliana asumió el cargo. Peña quedó detenido en su casa por supuestos delitos.",
+      "Las fuentes difieren en detalles del trámite: Al Jazeera señaló que el Congreso no había resuelto aún la renuncia."
+    ],
     fuentes: [
       {
         medio: "Emol",
@@ -227,6 +263,10 @@ window.PIEZAS = [
     tema: "Tecnología",
     titular: "WhatsApp ocultará tu número en una fecha que prefiere mantener oculta",
     bajada: "WhatsApp trabaja en una función que ocultaría por defecto el número de teléfono, y cada usuario elegiría quién puede verlo, según WABetaInfo. La función está en desarrollo, no tiene fecha de lanzamiento y no sería retroactiva.",
+    cuerpo: [
+      "WhatsApp trabaja en una función que ocultaría por defecto el número de teléfono de los usuarios. Cada persona elegiría quién puede verlo, según WABetaInfo, un sitio que sigue las versiones de prueba de la aplicación.",
+      "La función está en desarrollo, no tiene fecha de lanzamiento y no sería retroactiva."
+    ],
     fuentes: [
       {
         medio: "Infobae",
@@ -250,6 +290,10 @@ window.PIEZAS = [
     tema: "Tecnología",
     titular: "El Apple Watch tomará apuntes de tus conversaciones; a quienes hablen contigo no les llegará copia",
     bajada: "La beta para desarrolladores de watchOS 27.3, disponible desde el 3 de noviembre, incluye resúmenes de conversaciones con Siri. Apple dice que no almacena el audio. Las organizaciones EFF y EPIC critican la función por motivos de privacidad.",
+    cuerpo: [
+      "La versión beta para desarrolladores de watchOS 27.3, disponible desde el 3 de noviembre, incluye funciones que resumen conversaciones, entre ellas Siri Recap y Live Rewind.",
+      "Apple afirma que no almacena el audio. Las organizaciones EFF y EPIC criticaron la función por motivos de privacidad. Según la nota, Live Rewind sí avisa a quienes participan de la conversación."
+    ],
     fuentes: [
       {
         medio: "Infobae",
@@ -273,6 +317,12 @@ window.PIEZAS = [
     tema: "Ciencia",
     titular: "La NASA abre convocatoria para ir a la Luna y a Marte: por fin un trabajo con viaje incluido",
     bajada: "La convocatoria cierra a las 11:59 p. m. del jueves 3 de diciembre. Exige ciudadanía estadounidense, un posgrado STEM o equivalente y tres años de experiencia. Artemis III es en 2027 y Artemis IV en 2028. La nota no indica el número de plazas.",
+    cuerpo: [
+      "La NASA abrió una convocatoria para incorporar astronautas, en el marco del programa Artemis. Las postulaciones cierran a las 11:59 p. m. del jueves 3 de diciembre de 2026.",
+      "Entre los requisitos figuran ciudadanía estadounidense, una maestría o equivalente en un campo STEM y tres años de experiencia profesional. Los candidatos deben superar un examen físico. La nota no indica cuántas plazas hay.",
+      "Artemis III (2027) probará el acoplamiento de la nave Orion con módulos de alunizaje, y Artemis IV (2028) buscará el primer alunizaje tripulado del programa. La selección terminaría a fines de 2027 y el entrenamiento, de dos años, comenzaría a inicios de 2028.",
+      "El astronauta Frank Rubio advirtió que la mayor parte del trabajo es de apoyo en tierra."
+    ],
     fuentes: [
       {
         medio: "Infobae",

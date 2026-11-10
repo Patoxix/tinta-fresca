@@ -50,23 +50,30 @@
     art.id = p.id;
     art.setAttribute("aria-labelledby", "t-" + p.id);
 
-    var fig = el("figure", "ilustracion");
-    var img = el("img");
-    img.src = "img/" + p.id + ".svg";
-    img.alt = "";
-    img.width = 600;
-    img.height = 400;
-    img.loading = "lazy";
-    fig.appendChild(img);
-    fig.appendChild(el("figcaption", null, "Ilustración: Tinta Fresca"));
-    art.appendChild(fig);
+    if (p.imagen) {
+      var fig = el("figure", "ilustracion");
+      var link = el("a");
+      link.href = "nota.html?id=" + p.id;
+      link.tabIndex = -1;
+      var img = el("img");
+      img.src = p.imagen.src;
+      img.alt = p.imagen.alt || "";
+      img.loading = "lazy";
+      link.appendChild(img);
+      fig.appendChild(link);
+      if (p.imagen.credito) fig.appendChild(el("figcaption", null, p.imagen.credito));
+      art.appendChild(fig);
+    }
 
     var tema = el("p", "tema", p.tema);
     tema.appendChild(el("span", "etiqueta", "Sátira"));
     art.appendChild(tema);
 
-    var h = el("h3", "titular", p.titular);
+    var h = el("h3", "titular");
     h.id = "t-" + p.id;
+    var ht = el("a", null, p.titular);
+    ht.href = "nota.html?id=" + p.id;
+    h.appendChild(ht);
     art.appendChild(h);
 
     art.appendChild(el("p", "bajada", p.bajada));
@@ -74,12 +81,9 @@
     var pie = el("p", "pie-nota");
     pie.appendChild(document.createTextNode(window.PUBLICADO || ""));
     pie.appendChild(el("span", "sep", "·"));
-    var a = el("a", null, "Leer la nota original");
-    a.href = p.fuentes[0].url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
+    var a = el("a", null, "Leer la nota");
+    a.href = "nota.html?id=" + p.id;
     pie.appendChild(a);
-    pie.appendChild(document.createTextNode(" (" + p.fuentes[0].medio + ")"));
     art.appendChild(pie);
 
     art.appendChild(ficha(p));
@@ -120,7 +124,7 @@
       piezas.forEach(function (p) {
         var li = el("li");
         var a = el("a", null, p.titular);
-        a.href = "#" + p.id;
+        a.href = "nota.html?id=" + p.id;
         if (oculto) {
           li.setAttribute("aria-hidden", "true");
           a.tabIndex = -1;
