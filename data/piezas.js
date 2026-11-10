@@ -93,6 +93,7 @@ window.PIEZAS = [
     seccion: "peru",
     puesto: "lateral",
     tema: "Elecciones municipales",
+    imagen: { src: "img/conima-moneda.webp", alt: "Una moneda de un sol peruano sobre una urna blanca." },
     titular: "Cara o sello: la alcaldía de Conima se define por una moneda",
     bajada: "Tras un empate de 671 votos en el distrito de Conima (Moho, Puno), el Jurado Electoral Especial de Huancané resolvió con una moneda de un sol, según el método acordado por el JNE. Ganó «sello» y, con él, el candidato Rubén Quispe Capajaña.",
     cuerpo: [
